@@ -35,6 +35,9 @@ $vivid-red: rgb(226, 50, 55);
   margin-left: auto;
 }
 
+a:hover { 
+  background-color: pink;
+}
 #logo-hn {
   background-image: url('../../../assets/logo_HN.png');
   height: 40px;

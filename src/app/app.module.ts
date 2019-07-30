@@ -19,7 +19,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 const routes: Routes = [
   { path: 'topstories', data: { feed: 'topstories' }, component: StoryFeedComponent },
   { path: '', redirectTo: 'topstories', pathMatch: 'full' },
-  { path: 'newstories', data: { feed: 'newstories' }, component: StoryFeedComponent },
+  { path: 'newstories', data: { feed: 'newstories' }, component: StoryFeedComponent, 	redirectTo: '', },
   { path: 'beststories', data: { feed: 'beststories' }, component: StoryFeedComponent },
   { path: 'askstories', data: { feed: 'askstories' }, component: StoryFeedComponent },
   { path: 'showstories', data: { feed: 'showstories' }, component: StoryFeedComponent },
