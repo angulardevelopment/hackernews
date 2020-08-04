@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-HackerNews with Angular 6 [demo](https://sunny7899.github.io/hackernews/topstories)
+HackerNews with Angular 6 [demo](https://sunny7899.github.io/hackernews/)
 
 ## Development server
 
