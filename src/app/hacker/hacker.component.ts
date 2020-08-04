@@ -8,7 +8,7 @@ import { CommonService } from '../services/common.service';
 })
 export class HackerComponent implements OnInit {
 
-  news = {};
+  news;
   constructor(private HackerNewsService: CommonService) {
     this.HackerNewsService.getNews().subscribe(data => this.news = data);
   }
