@@ -15,6 +15,7 @@ import { CollapsibleListComponent } from './components/collapsible-list/collapsi
 import {Routes,RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { GithubComponent } from './github/github.component';
 
 const routes: Routes = [
   { path: 'topstories', data: { feed: 'topstories' }, component: StoryFeedComponent },
@@ -39,7 +40,8 @@ const routes: Routes = [
     StoryFeedItemComponent,
     StoryFeedItemDetailComponent,
     UserComponent,
-    CollapsibleListComponent
+    CollapsibleListComponent,
+    GithubComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
