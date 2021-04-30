@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HackerComponent } from './hacker/hacker.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StoryFeedComponent } from './components/story-feed/story-feed.component';
@@ -15,7 +14,6 @@ import { CollapsibleListComponent } from './components/collapsible-list/collapsi
 import {Routes,RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
-import { GithubComponent } from './github/github.component';
 
 const routes: Routes = [
   { path: 'topstories', data: { feed: 'topstories' }, component: StoryFeedComponent },
@@ -27,13 +25,11 @@ const routes: Routes = [
   { path: 'jobstories', data: { feed: 'jobstories' }, component: StoryFeedComponent },
   { path: 'user/:username', component: UserComponent },
   { path: 'item/:itemId', component: StoryFeedItemDetailComponent },
-  { path: 'simple', component: HackerComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HackerComponent,
     HeaderComponent,
     FooterComponent,
     StoryFeedComponent,
@@ -41,18 +37,19 @@ const routes: Routes = [
     StoryFeedItemDetailComponent,
     UserComponent,
     CollapsibleListComponent,
-    GithubComponent
   ],
   imports: [
+
     RouterModule.forRoot(routes),
     BrowserModule,
-   
+
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+
   ],
+  exports: [ RouterModule ],
   providers: [],
   bootstrap: [AppComponent]
 })
