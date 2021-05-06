@@ -14,6 +14,7 @@ import { CollapsibleListComponent } from './components/collapsible-list/collapsi
 import {Routes,RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { BasicComponent } from './basic/basic.component';
 
 const routes: Routes = [
   { path: 'topstories', data: { feed: 'topstories' }, component: StoryFeedComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
     StoryFeedItemDetailComponent,
     UserComponent,
     CollapsibleListComponent,
+    BasicComponent,
   ],
   imports: [
 

@@ -16,8 +16,9 @@ export class CommonService {
   constructor(private _http:HttpClient){
   }
 
-  
-  getNews(){      
+
+
+  getNews(){
     return this._http.get(`https://hn.algolia.com/api/v1/search_by_date?query=nodejs&tags=story`).pipe(map(res=>{
         return res;
     }))

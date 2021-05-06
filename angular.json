@@ -24,7 +24,6 @@
             ],
             "styles": [
               "src/styles.scss"
-            
             ],
             "scripts": []
           },
@@ -124,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "temp7"
+  "defaultProject": "temp7",
+  "cli": {
+    "analytics": false
+  }
 }
