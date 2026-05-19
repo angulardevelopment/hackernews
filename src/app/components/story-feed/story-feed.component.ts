@@ -7,7 +7,8 @@ import { CommonService } from 'src/app/services/common.service';
 @Component({
   selector: 'app-story-feed',
   templateUrl: './story-feed.component.html',
-  styleUrls: ['./story-feed.component.scss']
+  styleUrls: ['./story-feed.component.scss'],
+  standalone: false
 })
 export class StoryFeedComponent implements OnInit {
   private subscription: any;

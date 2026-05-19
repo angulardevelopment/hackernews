@@ -5,7 +5,8 @@ import { CommonService } from 'src/app/services/common.service';
 @Component({
   selector: 'app-collapsible-list',
   templateUrl: './collapsible-list.component.html',
-  styleUrls: ['./collapsible-list.component.scss']
+  styleUrls: ['./collapsible-list.component.scss'],
+  standalone: false
 })
 export class CollapsibleListComponent implements OnInit {
 

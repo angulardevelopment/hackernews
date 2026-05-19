@@ -6,7 +6,8 @@ import { CommonService } from 'src/app/services/common.service';
 @Component({
   selector: 'app-story-feed-item-detail',
   templateUrl: './story-feed-item-detail.component.html',
-  styleUrls: ['./story-feed-item-detail.component.scss']
+  styleUrls: ['./story-feed-item-detail.component.scss'],
+  standalone: false
 })
 export class StoryFeedItemDetailComponent implements OnInit {
 

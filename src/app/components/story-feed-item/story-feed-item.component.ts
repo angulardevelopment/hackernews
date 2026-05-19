@@ -3,7 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-story-feed-item',
   templateUrl: './story-feed-item.component.html',
-  styleUrls: ['./story-feed-item.component.scss']
+  styleUrls: ['./story-feed-item.component.scss'],
+  standalone: false
 })
 export class StoryFeedItemComponent implements OnInit {
 
